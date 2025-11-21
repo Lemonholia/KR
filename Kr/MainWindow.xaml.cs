@@ -3,7 +3,7 @@ using System.Text;
 using System.Windows;
 using System.Text.RegularExpressions;
 
-namespace _12345_Ivanov_1
+namespace _12345_Greshnyakov_4
 {
     public partial class MainWindow : Window
     {
