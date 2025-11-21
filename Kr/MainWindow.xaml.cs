@@ -12,7 +12,7 @@ namespace _12345_Greshnyakov_4
             InitializeComponent();
             this.Title = "Иванов - Вариант 1";
         }
-
+ 
         private void TransformButton_Click(object sender, RoutedEventArgs e)
         {
             try
