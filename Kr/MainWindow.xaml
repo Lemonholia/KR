@@ -1,0 +1,12 @@
+<Window x:Class="StringTransformApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Преобразование строки" Height="300" Width="400">
+    <StackPanel Margin="15">
+        <TextBlock Text="Введите строку на английском:" Margin="0,0,0,10"/>
+        <TextBox x:Name="InputTextBox" Height="100" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        <Button Content="Преобразовать" Click="TransformButton_Click" Margin="0,10,0,10" Height="25"/>
+        <TextBlock Text="Результат:" FontWeight="Bold"/>
+        <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" Background="LightYellow" Height="80"/>
+    </StackPanel>
+</Window>
