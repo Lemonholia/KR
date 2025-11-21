@@ -1,12 +1,24 @@
-<Window x:Class="StringTransformApp.MainWindow"
+<Window x:Class="_12345_Ivanov_1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Преобразование строки" Height="300" Width="400">
-    <StackPanel Margin="15">
-        <TextBlock Text="Введите строку на английском:" Margin="0,0,0,10"/>
-        <TextBox x:Name="InputTextBox" Height="100" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
-        <Button Content="Преобразовать" Click="TransformButton_Click" Margin="0,10,0,10" Height="25"/>
-        <TextBlock Text="Результат:" FontWeight="Bold"/>
-        <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" Background="LightYellow" Height="80"/>
+        Title="Грешняков - Вариант 4" Height="350" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="20">
+        <TextBlock Text="Иванов - Вариант 1" FontSize="16" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,15"/>
+        
+        <TextBlock Text="Введите строку на английском языке:" Margin="0,0,0,5"/>
+        <TextBox x:Name="InputTextBox" Height="80" TextWrapping="Wrap" 
+                 VerticalScrollBarVisibility="Auto" Margin="0,0,0,10"/>
+        
+        <Button Content="Преобразовать строку" Click="TransformButton_Click" 
+                Height="30" Margin="0,0,0,15" Background="LightBlue"/>
+        
+        <TextBlock Text="Результат:" FontWeight="Bold" Margin="0,0,0,5"/>
+        <Border BorderBrush="Gray" BorderThickness="1" Background="LightYellow">
+            <ScrollViewer Height="100" VerticalScrollBarVisibility="Auto">
+                <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" Margin="5"/>
+            </ScrollViewer>
+        </Border>
     </StackPanel>
 </Window>

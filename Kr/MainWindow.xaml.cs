@@ -1,28 +1,52 @@
 using System;
 using System.Text;
 using System.Windows;
+using System.Text.RegularExpressions;
 
-namespace StringTransformApp
+namespace _12345_Ivanov_1
 {
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            this.Title = "Иванов - Вариант 1";
         }
 
         private void TransformButton_Click(object sender, RoutedEventArgs e)
         {
-            string input = InputTextBox.Text;
-            
-            if (string.IsNullOrWhiteSpace(input))
+            try
             {
-                ResultTextBlock.Text = "Введите текст";
-                return;
-            }
+                string input = InputTextBox.Text.Trim();
+                
+                if (string.IsNullOrEmpty(input))
+                {
+                    ResultTextBlock.Text = "Ошибка: Введите текст";
+                    ResultTextBlock.Foreground = System.Windows.Media.Brushes.Red;
+                    return;
+                }
 
-            string result = TransformString(input);
-            ResultTextBlock.Text = result;
+                if (!IsEnglishText(input))
+                {
+                    ResultTextBlock.Text = "Ошибка: Текст должен содержать только английские буквы и пробелы";
+                    ResultTextBlock.Foreground = System.Windows.Media.Brushes.Red;
+                    return;
+                }
+
+                string result = TransformString(input);
+                ResultTextBlock.Text = result;
+                ResultTextBlock.Foreground = System.Windows.Media.Brushes.Black;
+            }
+            catch (Exception ex)
+            {
+                ResultTextBlock.Text = $"Ошибка: {ex.Message}";
+                ResultTextBlock.Foreground = System.Windows.Media.Brushes.Red;
+            }
+        }
+
+        private bool IsEnglishText(string text)
+        {
+            return Regex.IsMatch(text, @"^[a-zA-Z\s]+$");
         }
 
         private string TransformString(string input)
