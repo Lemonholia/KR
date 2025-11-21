@@ -4,7 +4,7 @@
         Title="Грешняков - Вариант 4" Height="350" Width="500"
         WindowStartupLocation="CenterScreen">
     <StackPanel Margin="20">
-        <TextBlock Text="Иванов - Вариант 1" FontSize="16" FontWeight="Bold" 
+        <TextBlock Text="Греешняков - Вариант 4" FontSize="16" FontWeight="Bold" 
                    HorizontalAlignment="Center" Margin="0,0,0,15"/>
         
         <TextBlock Text="Введите строку на английском языке:" Margin="0,0,0,5"/>

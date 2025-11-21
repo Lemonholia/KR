@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aedecc-c1da-4652-9cb3-15973f952515" name="Changes" comment="" />
+    <list default="true" id="03aedecc-c1da-4652-9cb3-15973f952515" name="Changes" comment="Init DDD">
+      <change beforePath="$PROJECT_DIR$/Kr/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Kr/MainWindow.xaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763725579877</updated>
       <workItem from="1763725581681" duration="2064000" />
+      <workItem from="1763727757275" duration="341000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -94,7 +97,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763727139737</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="INitial d">
+      <option name="closed" value="true" />
+      <created>1763727998005</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763727998005</updated>
+    </task>
+    <task id="LOCAL-00003" summary="InitialDD">
+      <option name="closed" value="true" />
+      <created>1763728064810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763728064810</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +124,10 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="INitial d" />
+    <MESSAGE value="InitialDD" />
+    <MESSAGE value="Init DDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init DDD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
